@@ -113,6 +113,16 @@ h2 {
   background-image: url("../src/img/carnedesolnanata.jpg");
 }
 
+#img-10 {
+  background-image: url("../src/img/carnedesolpromo.jpg");
+
+}
+
+#img-11 {
+  background-image: url("../src/img/favapromo.jpg");
+
+}
+
 h3 {
   margin-bottom: 10px;
   color: #b46e0c;

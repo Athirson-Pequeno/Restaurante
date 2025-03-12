@@ -26,7 +26,6 @@
   box-shadow: inset 0 -5px 0 0 rgb(255, 255, 255);
 }
 
-/* Cabeçalho */
 header {
   background-color: #f7c37bf2;
   color: #fff;
@@ -37,7 +36,6 @@ header {
   font: small-caption;
 }
 
-/* Grid do prato escolhido */
 
 h2 {
   text-transform: uppercase;
@@ -148,7 +146,6 @@ h3 {
   background-color: #e9b676ce;
 }
 
-/* Footer */
 footer {
   background-color: #f7c37bf2;
   color: #fff;

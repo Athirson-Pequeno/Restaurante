@@ -40,6 +40,34 @@
   height: auto;
 }
 
+.grad {
+  background-image: linear-gradient(to right, #080808 0%, transparent 200%), url(/src/img/vo-chico-marco.jpg);
+  margin-top: 15px;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-content: center;
+  background-position: center;
+  border-radius: 15px;
+}
+
+.grad p{
+  max-width: 50%;
+  font-size: 20px ;
+  padding: 10px;
+  color: white;
+}
+
+
+.grad h1{
+  color: white;
+  font-size: 78px;
+  padding: 10px;
+  font-family: "Trattatello", fantasy;
+}
+
+
 .banner p {
   color: white;
   font-size: 78px;

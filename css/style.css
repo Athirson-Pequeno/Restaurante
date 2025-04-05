@@ -1,11 +1,16 @@
 .body {
-  background-color: #ffffff;
+  background-color: #ffdeaff2;
 }
 
 .menu {
-  background-color: #333333c6;
+  justify-content: space-between;
+  display: flex;
+  background-color: #000000c6;
   background-image: linear-gradient(#333333, #33333300);
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
 }
 
@@ -16,6 +21,13 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+.a2 {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
 }
 
 .menu a:hover {
@@ -56,7 +68,6 @@
 
 .promocao-card {
   width: 31%;
-  background-color: #ffffff;
   border-radius: 10px;
   background-color: white;
 
@@ -65,7 +76,7 @@
 
 .promocao-link {
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
 .promocao img {
@@ -174,6 +185,7 @@
   background-color: white;
   margin-bottom: 20px;
 }
+
 .texto {
   text-transform: uppercase;
   border-bottom: 3px solid #edba73;
@@ -202,15 +214,15 @@
   border-radius: 15px;
 }
 
-.grad p{
+.grad p {
   max-width: 50%;
-  font-size: 20px ;
+  font-size: 20px;
   padding: 10px;
   color: white;
 }
 
 
-.grad h1{
+.grad h1 {
   color: white;
   font-size: 78px;
   padding: 10px;

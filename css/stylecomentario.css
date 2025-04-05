@@ -1,9 +1,15 @@
 .menu {
-    background-color: #333333c6;
-    background-image: linear-gradient(#333333, #33333300);
-    position: fixed;
-    width: 100%;
-  }
+  justify-content: space-between;
+  display: flex;
+  background-color: #000000c6;
+  background-image: linear-gradient(#333333, #33333300);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
   
   .menu a {
     float: left;

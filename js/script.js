@@ -75,12 +75,12 @@ function lerPratoDaLista(id) {
     {
       id: 1,
       nome: "Fava completa",
-      preco: 59.9,
+      preco: 49.9,
     },
     {
       id: 2,
       nome: "Carne de sol completa",
-      preco: 189.9,
+      preco: 149.9,
     },
     {
       id: 3,
@@ -95,7 +95,7 @@ function lerPratoDaLista(id) {
     {
       id: 5,
       nome: "Arroz Carreteiro",
-      preco: 159.9,
+      preco: 129.9,
     },
     {
       id: 6,
@@ -131,7 +131,7 @@ function lerPratoDaLista(id) {
       id: 12,
       nome: "Água",
       preco: 3.5,
-    },
+    }
   ];
 
   const produto = produtos.find((element) => element.id === id);

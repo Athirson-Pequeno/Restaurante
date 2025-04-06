@@ -106,7 +106,7 @@ function gerarPedido() {
 
   mensagem += `\n*Total:* R$${total.toFixed(
     2
-  )}\n\n Obrigado por comprar conosco 😁`;
+  )}`;
 
   return encodeURIComponent(mensagem);
 }

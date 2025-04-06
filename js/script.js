@@ -95,14 +95,18 @@ function retornaListaDeProdutos() {
 }
 
 function gerarPedido() {
-  console.log("askjdfhaklsjhd");
   lista = retornaListaDeProdutos();
-  var mensagem = "Restaurante Pé de fava\n";
+  var mensagem = "*Restaurante Pé de fava*\n\n";
   lista.forEach((element, index) => {
-    mensagem += `${index + 1} - ${element.nome} - ${element.quantidade}x - R$${
-      element.precoFinal
-    }\n`;
+    mensagem += `${index + 1} - *${element.nome}* - ${
+      element.quantidade
+    }x - R$${element.precoFinal.toFixed(2)}\n`;
   });
+  const total = lista.reduce((acc, item) => acc + item.precoFinal, 0);
+
+  mensagem += `\n*Total:* R$${total.toFixed(
+    2
+  )}\n\n Obrigado por comprar conosco 😁`;
 
   return encodeURIComponent(mensagem);
 }

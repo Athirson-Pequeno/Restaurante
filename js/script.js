@@ -95,14 +95,16 @@ function retornaListaDeProdutos() {
 }
 
 function gerarPedido() {
-  console.log("askjdfhaklsjhd")
-  lista = retornaListaDeProdutos()
-  var mensagem = "Restaurante Pé de fava"
+  console.log("askjdfhaklsjhd");
+  lista = retornaListaDeProdutos();
+  var mensagem = "Restaurante Pé de fava\n";
   lista.forEach((element, index) => {
-    mensagem +=`${index+1} - ${element.nome} - ${element.quantidade}x - R$${element.precoFinal}`
-  })
+    mensagem += `${index + 1} - ${element.nome} - ${element.quantidade}x - R$${
+      element.precoFinal
+    }\n`;
+  });
 
-  return encodeURIComponent(mensagem)
+  return encodeURIComponent(mensagem);
 }
 
 function lerPratoDaLista(id) {

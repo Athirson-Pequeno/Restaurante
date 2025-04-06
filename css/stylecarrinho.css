@@ -1,6 +1,14 @@
 body{
-  background-color: #5a350a;
   background-color: #ffdeaff2;
+  margin: 10px;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column; 
+}
+
+.content {
+  flex: 1; 
+  padding-bottom: 60px; 
 }
 
 button{
@@ -127,4 +135,18 @@ button:hover{
   height: 35px;
   border-radius: 5px;
   text-align: center;
+}
+
+footer {
+  border-radius: 10px;
+  background-color: #de9a3bb6;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  margin-top: auto;
+}
+
+footer a{
+  text-decoration: none;
+  color: #fff;
 }

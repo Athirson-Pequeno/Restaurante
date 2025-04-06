@@ -161,11 +161,11 @@ h3 {
 }
 
 footer {
-  background-color: #f7c37bf2;
+  border-radius: 10px;
+  background-color: #de9a3bb6;
   color: #fff;
-  border-top: 4px solid #f0c189c9;
   text-align: center;
-  padding: 40px;
+  padding: 30px;
 }
 
 .card {

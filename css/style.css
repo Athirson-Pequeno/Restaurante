@@ -148,7 +148,7 @@
 
 .contato div p a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .form {
@@ -226,4 +226,18 @@
   font-size: 78px;
   padding: 10px;
   font-family: "Trattatello", fantasy;
+}
+
+footer {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #de9a3bb6;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+
+.final {
+  text-decoration: none;
+  color: #fff;
 }

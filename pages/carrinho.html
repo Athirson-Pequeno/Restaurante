@@ -58,16 +58,19 @@
           })">+</button>
                 <div class="item-preco">
                     R$ ${item.precoFinal.toFixed(2)}
-                 </div>
-                 </div>
-              </div>
-            </div>
-          `;
-        });
-
-        const total = itens.reduce((acc, item) => acc + item.precoFinal, 0);
-        totalContainer.innerHTML = `
-          <h3>Total: R$ ${total.toFixed(2)}</h3>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    `;
+                  });
+                  
+                  const total = itens.reduce((acc, item) => acc + item.precoFinal, 0);
+                  totalContainer.innerHTML = `
+                  <div class="finalizar-pedido">
+                    <h3>Total: R$ ${total.toFixed(2)}</h3>
+                    <a href="https://api.whatsapp.com/send?phone=5583993849744&text=${gerarPedido()}" >Finalizar pedido</a>
+                  </div>
         `;
       }
 

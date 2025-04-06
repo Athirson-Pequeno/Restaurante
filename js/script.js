@@ -70,6 +70,41 @@ function lerDoLocalStorage(chave) {
   return dados ? JSON.parse(dados) : null;
 }
 
+function retornaListaDeProdutos() {
+  listaId = JSON.parse(localStorage.getItem("lista"));
+
+  if (!Array.isArray(listaId)) return [];
+
+  carrinho = listaId
+    .map((element) => {
+      produtoAchado = lerPratoDaLista(element.id);
+
+      if (!produtoAchado) return null;
+
+      return {
+        id: produtoAchado.id,
+        nome: produtoAchado.nome,
+        preco: produtoAchado.preco,
+        quantidade: element.qtd,
+        precoFinal: element.qtd * produtoAchado.preco,
+      };
+    })
+    .filter(Boolean);
+
+  return carrinho;
+}
+
+function gerarPedido() {
+  console.log("askjdfhaklsjhd")
+  lista = retornaListaDeProdutos()
+  var mensagem = "Restaurante Pé de fava"
+  lista.forEach((element, index) => {
+    mensagem +=`${index+1} - ${element.nome} - ${element.quantidade}x - R$${element.precoFinal}`
+  })
+
+  return encodeURIComponent(mensagem)
+}
+
 function lerPratoDaLista(id) {
   const produtos = [
     {
@@ -131,34 +166,10 @@ function lerPratoDaLista(id) {
       id: 12,
       nome: "Água",
       preco: 3.5,
-    }
+    },
   ];
 
   const produto = produtos.find((element) => element.id === id);
 
   return produto;
-}
-
-function retornaListaDeProdutos() {
-  listaId = JSON.parse(localStorage.getItem("lista"));
-
-  if (!Array.isArray(listaId)) return [];
-
-  carrinho = listaId
-    .map((element) => {
-      produtoAchado = lerPratoDaLista(element.id);
-
-      if (!produtoAchado) return null;
-
-      return {
-        id: produtoAchado.id,
-        nome: produtoAchado.nome,
-        preco: produtoAchado.preco,
-        quantidade: element.qtd,
-        precoFinal: element.qtd * produtoAchado.preco,
-      };
-    })
-    .filter(Boolean);
-
-  return carrinho;
 }

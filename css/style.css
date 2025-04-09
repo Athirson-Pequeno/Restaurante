@@ -241,3 +241,7 @@ footer {
   text-decoration: none;
   color: #fff;
 }
+
+.justify {
+  text-align: justify;
+}
